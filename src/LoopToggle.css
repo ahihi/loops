@@ -1,0 +1,48 @@
+.loop-toggle {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    color: #FFF;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 0.25rem solid #FFF;
+    border-radius: 4rem;
+    cursor: pointer;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "IBMPlexMono";
+    position: absolute;
+    transition: 2s linear;
+    opacity: 0.0;
+    outline: 0;
+}
+
+.loop-toggle.visible {
+    opacity: 1.0; 
+}
+
+.loop-toggle.on {
+    background-color: #FFF;
+    color: #000;
+    border: 0.25rem solid transparent;
+}
+
+#toggle-bass {
+    top: 1rem;
+    left: 1rem;
+}
+
+#toggle-drums {
+    top: 1rem;
+    right: 1rem;
+}
+
+#toggle-melody {
+    bottom: 1rem;
+    left: 1rem;
+}
+
+#toggle-pad {
+    bottom: 1rem;
+    right: 1rem;
+}
