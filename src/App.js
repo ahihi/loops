@@ -23,7 +23,6 @@ class App extends React.Component {
 
     async componentDidMount() {
         const sounds = ["bass", "drums", "melody", "pad"];
-        //this.setState({loaded: 1, loadCount: 1});
         await this.loadPlayers(sounds);
         this.withPlayers(p => {
             p.loop = true;

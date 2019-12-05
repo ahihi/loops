@@ -4,13 +4,6 @@ import Sketch from "react-p5";
 class LoopsSketch extends React.Component {
     constructor(props) {
         super(props);
-
-        window.lsk = this;
-        
-        this.bassMax = 0.2415;
-        this.drumsMax = 0.4135;
-        this.melodyMax = 0.1306;
-        this.padMax = 0.3539;
     }
 
     render() {
@@ -74,7 +67,6 @@ class LoopsSketch extends React.Component {
             this.analysisImage.set(x, y, p5.color(r, Math.round(gain * 255), 0));
         }
         this.analysisImage.updatePixels();
-        
         
         this.g.shader(this.analysisShader);
         this.analysisShader.setUniform("resolution", [w, h]);
